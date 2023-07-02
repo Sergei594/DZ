@@ -432,3 +432,67 @@
 # sure that the shells are sea shore shells
 # Output: 13
 
+# Задача 33
+# Хакер Василий получил доступ к классному журналу и хочет заменить все свои 
+# минимальные оценки на максимальные. Напишите программу, 
+# которая заменяет оценки Василия, 
+# но наоборот: все максимальные – на минимальные.
+# Input: 5 -> 1 3 3 3 4
+
+# Output: 1 3 3 3 1
+
+
+n = int (input())
+list_1 = [1,3,3,3,4]
+number_min = 0
+number_max = 0
+for i in list_1:
+
+# n = int(input("Введите кол-во оценок: "))
+# marks = []
+# for i in range(n):
+#     mark = int(input("Введите оценку: "))
+#     marks.append(mark)
+# # print(min(marks), max(marks))
+# for i in range(n):  # 0 1 2 3 4... n - 1
+#     if marks[i] == max(marks):
+#         marks[i] = min(marks)
+# print(marks)
+
+# Задача  35
+# Напишите функцию, которая принимает одно число и проверяет, 
+# является ли оно простым
+
+# Напоминание: 
+# Простое число - это число, которое имеет 2 делителя: 1  и n(само число)
+
+# Input: 5
+# Output: yes
+
+# n = int(input("Введите число: "))
+# f = 1
+# for i in range(2, n // 2 + 1):  # [2, 5]
+#     if n % i == 0:
+#         f = 0
+
+# if f == 0:
+#     print("no")
+# else:
+#     print("yes")
+
+ 
+ 
+
+ 
+# def reverse_numbers(n):
+#     if n == 0:
+#         return ''
+#     chislo = input()
+#     return reverse_numbers(n - 1) + f' {chislo}'
+
+
+# n = int(input("Введите число: "))
+# print(reverse_numbers(n))
+
+# r(2) -> " 4" + " 3" = " 4 3"
+

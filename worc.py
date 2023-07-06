@@ -360,7 +360,7 @@
 
 # Примечание: Пользователь может вводить значения списка или список задан изначально.
 
-# 13:55
+
 # from random import randint as rd
 
 
@@ -442,11 +442,7 @@
 # Output: 1 3 3 3 1
 
 
-n = int (input())
-list_1 = [1,3,3,3,4]
-number_min = 0
-number_max = 0
-for i in list_1:
+
 
 # n = int(input("Введите кол-во оценок: "))
 # marks = []
@@ -496,3 +492,33 @@ for i in list_1:
 
 # r(2) -> " 4" + " 3" = " 4 3"
 
+
+# Задача 43
+# list_1 = [int(i) for i in input("Введите значения: ").split()]
+# result = {}
+# for i in list_1:
+#     if i in result:
+#         result[i] += 1
+#     else:
+#         result[i] = 1
+# count = 0
+# for i in result.values():
+#     count += i // 2
+# print(count)
+
+
+n = int(input("Введите число: "))
+result = {}
+for i in range(2, n + 1):
+    count = 0
+    for j in range(1, i // 2 + 1):
+        if i % j == 0:
+            count += j
+    result[i] = count
+
+result_print = []
+for key, value in result.items():
+    if result.get(value, 0) == key and (key, value) not in result_print and key != value:
+        result_print.append((key, value))
+        result_print.append((value, key))
+        print(key, value)

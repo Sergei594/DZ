@@ -507,18 +507,78 @@
 # print(count)
 
 
-n = int(input("Введите число: "))
-result = {}
-for i in range(2, n + 1):
-    count = 0
-    for j in range(1, i // 2 + 1):
-        if i % j == 0:
-            count += j
-    result[i] = count
+# n = int(input("Введите число: "))
+# result = {}
+# for i in range(2, n + 1):
+#     count = 0
+#     for j in range(1, i // 2 + 1):
+#         if i % j == 0:
+#             count += j
+#     result[i] = count
 
-result_print = []
-for key, value in result.items():
-    if result.get(value, 0) == key and (key, value) not in result_print and key != value:
-        result_print.append((key, value))
-        result_print.append((value, key))
-        print(key, value)
+# result_print = []
+# for key, value in result.items():
+#     if result.get(value, 0) == key and (key, value) not in result_print and key != value:
+#         result_print.append((key, value))
+#         result_print.append((value, key))
+#         print(key, value)
+
+
+# a0 = int(input("Введите начальное значение: "))
+# d = int(input("Введите разность(ариф. прогрессии): "))
+# count = int(input("Введите кол-во элементов: "))
+# for i in range(count):
+#     print(a0, end=' ')
+#     a0 += d
+
+
+# from random import randint as rd
+
+
+# list_1 = [rd(-20, 20) for i in range(20)]
+# print(list_1)
+# min_number = int(input())
+# max_number = int(input())
+# for i in range(len(list_1)):
+# 	if min_number <= list_1[i] <= max_number:
+# 		print(list_1[i], end=' ')
+
+
+# trasformation = lambda x: x
+# values = [1, 23, 42, 'asdfg']
+# transformed_values = list(map(trasformation, values))
+# print(transformed_values)
+# if values == transformed_values:
+#     print('ok')
+# else:
+#     print('fail')
+
+# def find_farthest_orbit(orbits):
+#     result = max([i[0] * i[1] for i in orbits if i[0] != i[1]])
+#     return [i for i in orbits if i[0] * i[1] == result]
+
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# #            0        1         2       3       4
+# print(*find_farthest_orbit(orbits))
+
+
+# Напишите функцию same_by(characteristic, objects), которая проверяет, 
+# все ли объекты имеют одинаковое значение некоторой характеристики, и возвращают True, 
+# если это так. Если значение характеристики для разных объектов отличается - то False. 
+# Для пустого набора объектов, функция должна возвращать True. 
+# Аргумент characteristic - это функция, которая принимает объект и вычисляет его характеристику.
+# Ввод:							Вывод:same
+
+
+# def same_by(func, collection):
+#     return len(list(filter(func, collection))) == 0
+
+
+# values = [0, 2, 10, 6, 8, 12, 24]
+# if same_by(lambda x: x % 2, values):
+# 	print('same')
+# else:
+# 	print('different')
+
+# \t - турбуляция внутри кавычек для 36 задачи
+

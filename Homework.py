@@ -235,8 +235,20 @@
 # print(m_set2)
 # s_set = sorted(n_set1.intersection(m_set2))
 # print(s_set)
+c = input()
+set_1 = set()
+for i in range(6): # (b)
+    set_1.add(int(input("Введите число: ")))
+print(set_1)
 
+b = input()
+set_2 = set()
+for i in range(6): # (b)
+    set_2.add(int(input("Введите число: ")))
+print(set_2)
 
+set_3 = sorted(set_1.intersection(set_2))
+print(set_3)
 
 # Задача 28: Напишите рекурсивную функцию sum(a, b), 
 # возвращающую сумму двух целых неотрицательных чисел. 
